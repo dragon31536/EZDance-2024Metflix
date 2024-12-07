@@ -6,10 +6,15 @@
     <title>Medflix</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="../../srcs/common/filmContent.css">
-    <script src="../../srcs/common/filmContent.js" async=""></script>
-    <link rel="shortcut icon" href="../../srcs/icon.ico">
-    <link rel="apple-touch-icon" href="../../srcs/icon.png">
+    <link type="text/css" rel="stylesheet" href="./srcs/home.css">
+    <script src="./srcs/home.js" async="">
+      video.addEventListener('click',
+                             function() { video.play(); },
+                             false);
+
+    </script>
+    <link rel="shortcut icon" href="icon.ico">
+    <link rel="apple-touch-icon" href="icon.png">
   </head>
 
   <body>
@@ -21,17 +26,17 @@
               <tr>
                 <td class="header-item has-inline-left-gutter header-fullname-logo">
                   <a
-                    href="https://staceylai.github.io/medflix/"
+                    href="https://dragon31536.github.io/"
                     class="header-navigation-menu header-navigation-genres">
-                    <img src="../../srcs/hamburger.gif" class="title-header-more">
+                    <img src="./srcs/hamburger.gif" class="title-header-more">
                     <div class="header-navigation-slider-background"></div>
                     <div class="header-navigation-slider" style="left: 0px;">
                       <ol class="navigation-menu-settings">
                         <li class="has-inline-left-gutter navigation-menu-profile">
-                          <img src="../../srcs/profile.png" class="header-profile-avatar">
+                          <img src="./srcs/profile.png" class="header-profile-avatar">
                           <p class="navigation-menu-profile-link">
                             <span class="navigation-menu-profile-name">MTKer</span>
-                            <span lass="navigation-menu-profile-text">切換使用者</span>
+                            <span class="navigation-menu-profile-text">切換使用者</span>
                           </p>
                         </li>
                         <li class="has-inline-left-gutter navigation-menu-setting">帳戶</li>
@@ -39,20 +44,15 @@
                         <li class="has-inline-left-gutter navigation-menu-setting">登出 Medflix</li>
                       </ol>
                       <ol class="navigation-menu-sections">
-                        <li
-                          class="has-inline-left-gutter-border navigation-menu-section"
-                          data-href="https://staceylai.github.io/medflix/">
+                        <li class="has-inline-left-gutter-border navigation-menu-section navigation-menu-section-active">
                           首頁
                         </li>
-                        <li
-                          class="has-inline-left-gutter-border navigation-menu-section"
-                          data-href="https://staceylai.github.io/medflix/"
-                        >
+                        <li class="has-inline-left-gutter-border navigation-menu-section">
                           我的片單
                         </li>
                       </ol>
                       <ol class="navigation-menu-genres">
-                        <li class="has-inline-left-gutter-border navigation-menu-genre">驚悚</li>
+                        <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="https://www.facebook.com/photo?fbid=373143248397455&set=a.315993550779092">驚悚</li>
                         <li class="has-inline-left-gutter-border navigation-menu-genre">親子皆宜</li>
                         <li class="has-inline-left-gutter-border navigation-menu-genre">國際電影與節目</li>
                         <li class="has-inline-left-gutter-border navigation-menu-genre">實境、綜藝與談話性節目</li>
@@ -74,18 +74,19 @@
                       </ol>
                     </div>
                   </a>
-                  <a href="https://staceylai.github.io/medflix/" class="fullname-logo-main">
-                    <img src="../../srcs/logo-fullname.png" class="fullname-logo-image">
+                  <a href="https://dragon31536.github.io/" class="fullname-logo-main">
+                    <img src="./srcs/logo-fullname.png" class="fullname-logo-image">
                   </a>
-                  <a href="https://staceylai.github.io/medflix/" class="header-browse header-navigation-trigger header-has-genres">
+                  <a href="https://dragon31536.github.io/"
+                    class="header-browse header-navigation-trigger header-has-genres">
                     <span class="header-navigation-text">瀏覽</span>
                     <div class="header-browse-menu header-subnavigation">
                       <ol class="browse-menu-sections">
-                        <li class="browse-menu-section" data-href="https://staceylai.github.io/medflix/">首頁</li>
-                        <li class="browse-menu-section" data-href="https://staceylai.github.io/medflix/">我的片單</li>
+                        <li class="browse-menu-section browse-menu-section-active" data-href="https://dragon31536.github.io/">首頁</li>
+                        <li class="browse-menu-section" data-href="https://dragon31536.github.io/">我的片單</li>
                       </ol>
                       <ol class="browse-menu-genres">
-                        <li class="browse-menu-genre">驚悚</li>
+                        <li class="browse-menu-genre" target="_blank" data-href="https://www.facebook.com/photo?fbid=373143248397455&set=a.315993550779092">驚悚</li>
                         <li class="browse-menu-genre">親子皆宜</li>
                         <li class="browse-menu-genre">國際電影與節目</li>
                         <li class="browse-menu-genre">實境、綜藝與談話性節目</li>
@@ -111,10 +112,16 @@
                     <span class="header-navigation-text">兒童專區</span>
                   </a>
                 </td>
+                <td class="mobile-only">
+                  <a>
+                    <span style="font-size: xx-small">support mobile device only</span>
+                  </a>
+                </td>
                 <td class="header-item has-inline-right-gutter header-profile-wrapper">
                   <a class="header-profile">
-                    <img src="../../srcs/profile.png" class="header-profile-avatar" alt="">
-                      <span class="header-profile-name">MTKer</span>
+                    <img
+                      src="./srcs/profile.png" class="header-profile-avatar" alt="">
+                    <span class="header-profile-name">MTKer</span>
                     <div class="header-menu">
                       <p class="header-menu-item">切換使用者</p>
                       <p class="header-menu-item header-menu-account-item">帳戶</p>
@@ -122,106 +129,315 @@
                       <p class="header-menu-item">登出 Medflix</p>
                     </div>
                   </a>
-                  <form class="header-search-form">
-                    <input type="text" name="q" class="header-search-input header-search-not-placeholder"
-                      placeholder="無法搜尋•́ ▾ •̀ " data-placeholder="無法搜尋•́ ▾ •̀ " disabled="disabled">
+                  <form method="get" class="header-search-form">
+                    <input type="text" class="header-search-input header-search-not-placeholder" id="dummy"
+                      placeholder="無法搜尋•́ ▾ •̀ " data-placeholder="無法搜尋•́ ▾ •̀ " disabled="disabled" style="font-size: small;">
                   </form>
                 </td>
               </tr>
             </tbody>
           </table>
-          <div class="body-view details-view">
-            <div class="spotlight">
-              <div class="spotlight-wrapper">
-                <div class="spotlight-content has-inline-gutter">
-                  <table class="spotlight-table-wrapper">
-                    <tbody>
-                      <tr>
-                        <td class="spotlight-table-content">
-                          <p class="spotlight-name spotlight-readable">2023 Medflix舞展</p>
-                          <p class="spotlight-metadata spotlight-readable">
-                            <span class="spotlight-year">2023</span>
-                            <span class="spotlight-maturity">6+</span>
-                            <span class="spotlight-duration">1 分鐘</span>
-                          </p>
-                          <p class="spotlight-description spotlight-readable">
-                            2023年各位舞技精湛的各位帶來的精彩演出 by all MTK dancers.
-                          </p>
-                          <div class="spotlight-actions">
-                            <a
-                              class="action-button spotlight-watch-title spotlight-readable"
-                              target="_blank"
-                              href="https://youtu.be/b6HCOt4xy_c?si=w5XNLM5IkvfF6inR"
-                            >
-                              Trailer播放
-                            </a>
+          <div class="mainView" id="main-view" role="main">-->
+            <div class="lolomo is-fullbleed">
+              <span class="volatile-billboard-animations-container">
+                <div class="billboard-row" role="region" aria-label="精選內容">
+                  <div class="ptrack-container billboard-presentation-tracking">
+                    <div
+                      class="billboard-presentation-tracking ptrack-content"
+                      data-ui-tracking-context="%7B%22location%22:%22homeScreen%22,%22rank%22:0,%22request_id%22:%225ac95688-defa-4a25-a883-cc5a0a32f0c1-275486776%22,%22row%22:0,%22track_id%22:254015180,%22video_id%22:81716080,%22image_key%22:%22BILLBOARD%7C91eb8f60-8207-11ee-be36-0e5f74f0509d%7Cen%7CYDK%7C81716081%22,%22supp_video_id%22:1,%22lolomo_id%22:%22NES_23B187DA0BE193BE2D10DF9CF02922_p_1700906545459%22,%22list_id%22:%22NES_23B187DA0BE193BE2D10DF9CF02922-951BB306AEF2A8-E3C3ADEEA0_p_1700906545459%22,%22appView%22:%22billboard%22%7D"
+                      data-tracking-uuid="b81fe7bf-e32a-4ff0-ae7a-199ea4505051"
+                    >
+                      <div
+                        class="billboard-presentation-tracking ptrack-content"
+                        data-ui-tracking-context="%7B%22list_id%22:%22NES_23B187DA0BE193BE2D10DF9CF02922-951BB306AEF2A8-E3C3ADEEA0_p_1700906545459%22,%22location%22:%22homeScreen%22,%22rank%22:0,%22request_id%22:%225ac95688-defa-4a25-a883-cc5a0a32f0c1-275486776%22,%22row%22:0,%22track_id%22:254015180,%22unifiedEntityId%22:%22Video:81716080%22,%22video_id%22:81716080,%22image_key%22:%22BILLBOARD%7C91eb8f60-8207-11ee-be36-0e5f74f0509d%7Cen%7CYDK%7C81716081%22,%22supp_video_id%22:1,%22lolomo_id%22:%22NES_23B187DA0BE193BE2D10DF9CF02922_p_1700906545459%22,%22appView%22:%22boxArt%22,%22usePresentedEvent%22:true%7D"
+                        data-tracking-uuid="e5cd6473-da44-4276-9a21-2cd7900181c3"
+                      >
+                        <div class="billboard billboard-pane billboard-originals trailer-billboard">
+                          <div class="hero-image-wrapper">
+                            <video id="LogoAnimation" width=100% height=100% poster="video/poster.jpg" autoplay onclick="if (typeof InstallTrigger == 'undefined') (this.paused ? this.play() : this.pause());">
+                              <source src="video/LogoAnimation_whole_HD.mp4" type="video/mp4">
+                            </video>
+                            <div class="trailer-vignette vignette-layer"></div>
+                            <div class="hero-vignette vignette-layer"></div>
+                            <div class="embedded-components button-layer">
+                              <span class="maturity-rating">
+                                <a
+                                  id="LogoAnimationPlay"
+                                  style="color:#999"
+                                  onclick="playVid()"
+                                >
+                                  播放片頭
+                              </a>
+                              </span>
+                            </div>
                           </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div class="spotlight-background">
-                    <div class="spotlight-gradient spotlight-background-fill"></div>
-                    <img src="./cover.jpg" class="spotlight-still spotlight-background-fill">
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </span>
             </div>
-            <p class="has-inline-gutter details-description">
-              2023年各位舞技精湛的各位帶來的精彩演出 by all MTK dancer.
-            </p>
-            <div class="has-inline-gutter details-standalone">
-              <h2 class="row-name">影片資訊</h2>
-            </div>
-            <div class="has-inline-gutter title-details">
-              <div class="person-section">
-                <h3 class="details-name">主演</h3>
-                <ol class="details-list">
-                  <li><a class="details-link">全體MTK dancers</a></li>
-                </ol>
-              </div>
-              <div class="person-section">
-                <h3 class="details-name">攝影</h3>
-                <ol class="details-list">
-                  <li><a class="details-link">謝清文</a></li>
-                </ol>
-              </div>
-              <div class="genre-section">
-                <h3 class="details-name">類型</h3>
-                <ol class="details-list">
-                  <li><a class="details-link">舞展Tailer</a></li>
-                </ol>
-              </div>
-            </div>
-            <div class="standalone-gallery gallery body-view">
-              <div class="multi-row-lomo has-inline-left-gutter">
-                <h2 class="row-name">與《2023 Medflix舞展》類似照片</h2>
-                <div class="lomo has-inline-right-gutter">
-                  <a class="watch-title watch-title-1" data-index="1" href="../1/filmContent.html">
-                    <div
-                      style="background-image:url(../1/coverTitle.jpg)"
-                      class="title-boxart"
-                    >
-                    </div>
-                  </a>
+
+            <div class="body-view" data-progressive-low="true">
+              <div class="lolomo lolomo-standalone">
+                <div class="single-row-lomo has-inline-left-gutter lomo-scanned">
+                  <h2 class="lomo-name row-name">第一波首發上映</h2>
+                  <div class="lomo has-inline-right-gutter">
+                    <a href="./films/1/filmContent.html" class="watch-title watch-title-1" data-index="1">
+                      <div style="background-image:url(./films/1/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/2/filmContent.html" class="watch-title watch-title-2" data-index="2">
+                      <div style="background-image:url(./films/2/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/3/filmContent.html" class="watch-title watch-title-3" data-index="3">
+                      <div style="background-image:url(./films/3/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/4/filmContent.html" class="watch-title watch-title-4" data-index="4">
+                      <div style="background-image:url(./films/4/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/5/filmContent.html" class="watch-title watch-title-5" data-index="5">
+                      <div style="background-image:url(./films/5/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/6/filmContent.html" class="watch-title watch-title-6" data-index="6">
+                      <div style="background-image:url(./films/6/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/7/filmContent.html" class="watch-title watch-title-7" data-index="7">
+                      <div style="background-image:url(./films/7/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/8/filmContent.html" class="watch-title watch-title-8" data-index="8">
+                      <div style="background-image:url(./films/8/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                  </div>
+                </div>
+                <!--
+                <div class="single-row-lomo has-inline-left-gutter lomo-scanned">
+                  <h2 class="lomo-name row-name">致敬的電影</h2>
+                  <div class="lomo has-inline-right-gutter">
+                    <a href="./films/1/filmContent.html" class="watch-title watch-title-1" data-index="1">
+                      <div style="background-image:url(./films/1/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/2/filmContent.html" class="watch-title watch-title-2" data-index="2">
+                      <div style="background-image:url(./films/2/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/3/filmContent.html" class="watch-title watch-title-3" data-index="3">
+                      <div style="background-image:url(./films/3/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/4/filmContent.html" class="watch-title watch-title-4" data-index="4">
+                      <div style="background-image:url(./films/4/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/5/filmContent.html" class="watch-title watch-title-5" data-index="5">
+                      <div style="background-image:url(./films/5/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/6/filmContent.html" class="watch-title watch-title-6" data-index="6">
+                      <div style="background-image:url(./films/6/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/7/filmContent.html" class="watch-title watch-title-7" data-index="7">
+                      <div style="background-image:url(./films/7/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/8/filmContent.html" class="watch-title watch-title-8" data-index="8">
+                      <div style="background-image:url(./films/8/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                  </div>
+                </div>
+                -->
+                <div class="single-row-lomo has-inline-left-gutter lomo-scanned">
+                  <h2 class="lomo-name row-name">第二波壓軸主打</h2>
+                  <div class="lomo has-inline-right-gutter">
+                    <a href="./films/9/filmContent.html" class="watch-title watch-title-9" data-index="9">
+                      <div style="background-image:url(./films/9/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/10/filmContent.html" class="watch-title watch-title-10" data-index="10">
+                      <div style="background-image:url(./films/10/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/11/filmContent.html" class="watch-title watch-title-11" data-index="11">
+                      <div style="background-image:url(./films/11/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/12/filmContent.html" class="watch-title watch-title-12" data-index="12">
+                      <div style="background-image:url(./films/12/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/13/filmContent.html" class="watch-title watch-title-13" data-index="13">
+                      <div style="background-image:url(./films/13/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/14/filmContent.html" class="watch-title watch-title-14" data-index="14">
+                      <div style="background-image:url(./films/14/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/15/filmContent.html" class="watch-title watch-title-15" data-index="15">
+                      <div style="background-image:url(./films/15/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/16/filmContent.html" class="watch-title watch-title-16" data-index="16">
+                      <div style="background-image:url(./films/16/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/17/filmContent.html" class="watch-title watch-title-17" data-index="17">
+                      <div style="background-image:url(./films/17/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                  </div>
+                </div>
+                <!--
+                <div class="single-row-lomo has-inline-left-gutter lomo-scanned">
+                  <h2 class="lomo-name row-name">經典重溫</h2>
+                  <div class="lomo has-inline-right-gutter">
+                    <a href="./films/9/filmContent.html" class="watch-title watch-title-9" data-index="9">
+                      <div style="background-image:url(./films/9/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/10/filmContent.html" class="watch-title watch-title-10" data-index="10">
+                      <div style="background-image:url(./films/10/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/11/filmContent.html" class="watch-title watch-title-11" data-index="11">
+                      <div style="background-image:url(./films/11/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/12/filmContent.html" class="watch-title watch-title-12" data-index="12">
+                      <div style="background-image:url(./films/12/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/13/filmContent.html" class="watch-title watch-title-13" data-index="13">
+                      <div style="background-image:url(./films/13/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/14/filmContent.html" class="watch-title watch-title-14" data-index="14">
+                      <div style="background-image:url(./films/14/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/15/filmContent.html" class="watch-title watch-title-15" data-index="15">
+                      <div style="background-image:url(./films/15/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/16/filmContent.html" class="watch-title watch-title-16" data-index="16">
+                      <div style="background-image:url(./films/16/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/17/filmContent.html" class="watch-title watch-title-17" data-index="17">
+                      <div style="background-image:url(./films/17/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/18/filmContent.html" class="watch-title watch-title-18" data-index="18">
+                      <div style="background-image:url(./films/18/ref.jpg)" class="title-boxart"></div>
+                    </a>
+                  </div>
+                </div>
+                -->
+                <div class="single-row-lomo has-inline-left-gutter lomo-scanned">
+                  <h2 class="lomo-name row-name">給MTKer的最佳推薦</h2>
+                  <div class="lomo has-inline-right-gutter">
+                    <a href="./films/15/filmContent.html" class="watch-title watch-title-1" data-index="1">
+                      <div style="background-image:url(./films/15/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>                    
+                    <a href="./films/16/filmContent.html" class="watch-title watch-title-1" data-index="1">
+                      <div style="background-image:url(./films/16/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/17/filmContent.html" class="watch-title watch-title-2" data-index="2">
+                      <div style="background-image:url(./films/17/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/2/filmContent.html" class="watch-title watch-title-3" data-index="3">
+                      <div style="background-image:url(./films/2/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/10/filmContent.html" class="watch-title watch-title-4" data-index="4">
+                      <div style="background-image:url(./films/10/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/11/filmContent.html" class="watch-title watch-title-5" data-index="5">
+                      <div style="background-image:url(./films/11/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/13/filmContent.html" class="watch-title watch-title-6" data-index="6">
+                      <div style="background-image:url(./films/13/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/5/filmContent.html" class="watch-title watch-title-7" data-index="7">
+                      <div style="background-image:url(./films/5/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/9/filmContent.html" class="watch-title watch-title-8" data-index="8">
+                      <div style="background-image:url(./films/9/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/3/filmContent.html" class="watch-title watch-title-9" data-index="9">
+                      <div style="background-image:url(./films/3/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/8/filmContent.html" class="watch-title watch-title-10" data-index="10">
+                      <div style="background-image:url(./films/8/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/6/filmContent.html" class="watch-title watch-title-11" data-index="11">
+                      <div style="background-image:url(./films/6/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>                    
+                    <a href="./films/14/filmContent.html" class="watch-title watch-title-12" data-index="12">
+                      <div style="background-image:url(./films/14/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/5/filmContent.html" class="watch-title watch-title-13" data-index="13">
+                      <div style="background-image:url(./films/5/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/4/filmContent.html" class="watch-title watch-title-14" data-index="14">
+                      <div style="background-image:url(./films/4/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/7/filmContent.html" class="watch-title watch-title-15" data-index="15">
+                      <div style="background-image:url(./films/7/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/8/filmContent.html" class="watch-title watch-title-16" data-index="16">
+                      <div style="background-image:url(./films/8/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/12/filmContent.html" class="watch-title watch-title-17" data-index="17">
+                      <div style="background-image:url(./films/12/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./films/1/filmContent.html" class="watch-title watch-title-18" data-index="18">
+                      <div style="background-image:url(./films/1/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="single-row-lomo has-inline-left-gutter lomo-scanned">
+                  <h2 class="lomo-name row-name">過往回味</h2>
+                  <div class="lomo has-inline-right-gutter">
+                    <a href="./reviews/4/filmContent.html" class="watch-title watch-title-1" data-index="1">
+                      <div style="background-image:url(./reviews/4/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>                                 
+                    <a href="./reviews/4/filmContent.html" class="watch-title watch-title-2" data-index="2">
+                      <div style="background-image:url(./reviews/4/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>                    
+                    <a href="./reviews/1/filmContent.html" class="watch-title watch-title-3" data-index="3">
+                      <div style="background-image:url(./reviews/1/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./reviews/2/filmContent.html" class="watch-title watch-title-4" data-index="4">
+                      <div style="background-image:url(./reviews/2/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./reviews/3/filmContent.html" class="watch-title watch-title-5" data-index="5">
+                      <div style="background-image:url(./reviews/3/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./reviews/5/filmContent.html" class="watch-title watch-title-6" data-index="6">
+                      <div style="background-image:url(./reviews/5/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./reviews/6/filmContent.html" class="watch-title watch-title-7" data-index="7">
+                      <div style="background-image:url(./reviews/6/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="single-row-lomo has-inline-left-gutter lomo-scanned">
+                  <h2 class="lomo-name row-name">幕後彩蛋</h2>
+                  <div class="lomo has-inline-right-gutter">
+                    <a href="./cloth/filmContent.html" class="watch-title watch-title-1">
+                      <div style="background-image:url(./cloth/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./for2025/filmContent.html" class="watch-title watch-title-1">
+                      <div style="background-image:url(./for2025/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./stuff/stuff.html" class="watch-title watch-title-1" data-index="1">
+                      <div style="background-image:url(./stuff/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./director/filmContent.html" class="watch-title watch-title-1">
+                      <div style="background-image:url(./director/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./jokes/2/filmContent.html" class="watch-title watch-title-1">
+                      <div style="background-image:url(./jokes/2/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                    <a href="./jokes/3/filmContent.html" class="watch-title watch-title-1">
+                      <div style="background-image:url(./jokes/3/coverTitle.jpg)" class="title-boxart"></div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="footer has-inline-gutter">
             <ol>
-              <li><a href="https://dragon31536.github.io/stuff/stuff.html">工作人員名單</a></li>
-              <li><a href="https://dragon31536.github.io/contact/contact.htm">聯絡我們</a></li>
+              <li><a href="./stuff/stuff.html">工作人員名單</a></li>
+              <li><a href="./contact/contact.htm">聯絡我們</a></li>
               <!--
               <li>
-                <div style="vertical-align: baseline;">
-                  瀏覽次數: 
-                    <script src="https://staceylai.github.io/medflix/srcs/counter.js" type="text/javascript"></script>
-                    <script type="text/javascript">
+                <a>
+                  瀏覽次數:
+                  <script src="./srcs/counter.js" type="text/javascript"></script>
+                  <script type="text/javascript">
                     document.write(i2yesCounter.render({
                       y:'counter',
-                      p:'medflixR6',
-                      v:'staceylai.github.io/medflix',
+                      p:'medflixMain_',
+                      v:'dragon31536.github.io/medflix',
                       d:6, //數字位數
                       r:1, //1=不接受Reload,0=Reload會+1
                       t:'font123', //字型 font001 - font156 可用
@@ -229,19 +445,21 @@
                       n:0	//指定起始的數字
                     }));
                   </script>
-                </div>
+                </a>
               </li>
               -->
             </ol>
           </div>
           <div class="footer has-inline-gutter" style="font-size: 11px">
+            <span>僅支援行動裝置瀏覽。</span>
+            <br><br>
             <span>網站僅供聯發科熱舞社社團教學暨成發之藝術用途。</span>
           </div>
         </div>
       </div>
     </div>
     <div>
-      <script>window.netflix = window.netflix || {}; netflix.reactContext = { "models": { "browserInfo": { "data": { "name": "Mobile\x20Safari", "version": "13.0.3", "major": 13, "minor": 0, "patch": 3, "os": { "name": "iOS", "fullName": "iOS", "version": "13.2.3", "majorVersion": 13, "minorVersion": 2, "patchVersion": 3 }, "device": { "family": "iPhone" }, "isFirefox": false, "isSafari": true, "isIE": false, "isEdge": false, "isChrome": false, "isTesla": false, "isOpera": false, "isEdgeOSS": false, "isWindows": false, "isMac": false, "isChromeOS": false, "isLinux": false, "isAndroid": false, "isIOS": true, "isIOSGT91": true, "isWindowsPhone": false, "isMobile": true, "isAndroidPhone": false, "isWindowsVista": false, "isWindowsXP": false, "isWindows7": false, "isWindows8": false, "isWindows10": false, "originallyIdentifiedAsAppleMail": false, "features": { "webp": false, "es2015": false, "fontDisplayProperty": true, "supportsGames": false, "drmSystem": "fps", "maybeSupportsHTML5": true, "maybeSupportsHTML5withDRM": false, "maybeSupportsSL": false }, "specialFlags": {}, "esnPrefix": "NFCDSF-PH-", "_rawResult": { "family": "Mobile\x20Safari", "major": "13", "minor": "0", "patch": "3", "device": { "family": "iPhone", "major": "0", "minor": "0", "patch": "0" }, "os": { "family": "iOS", "major": "13", "minor": "2", "patch": "3" } } }, "type": "Model" }, "geo": { "data": { "locale": { "id": "zh-TW" } } }, "truths": { "data": { "isIELt12": false, "isIELt10": false, "isIELt9": false, "isIELt8": false, "isIpadSafariLt8": false, "isSafariLt8": false, "isSafariGt5": false, "isChromeLt47": false, "isAndroidBrowserLt4": false, "isIELt9AndIpadLt8": false, "needsShim": false, "missingFullVWSupport": false, "missingArrayFind": true, "currentProfileIsKids": false } } } };</script>
+      <script> window.netflix = window.netflix || {}; netflix.reactContext = { "models": { "browserInfo": { "data": { "name": "Chrome\x20Mobile", "version": "116.0.0.0", "major": 116, "minor": 0, "patch": 0, "os": { "name": "Android", "fullName": "Android", "version": "6.0.0", "majorVersion": 6, "minorVersion": 0, "patchVersion": 0 }, "device": { "family": "Nexus\x205" }, "isFirefox": false, "isSafari": false, "isIE": false, "isEdge": false, "isChrome": true, "isTesla": false, "isOpera": false, "isEdgeOSS": false, "isWindows": false, "isMac": false, "isChromeOS": false, "isLinux": false, "isAndroid": true, "isIOS": false, "isIOSGT91": false, "isWindowsPhone": false, "isMobile": true, "isAndroidPhone": true, "isWindowsVista": false, "isWindowsXP": false, "isWindows7": false, "isWindows8": false, "isWindows10": false, "originallyIdentifiedAsAppleMail": false, "features": { "webp": true, "es2015": false, "fontDisplayProperty": true, "supportsGames": false, "drmSystem": "widevine", "maybeSupportsHTML5": true, "maybeSupportsHTML5withDRM": true, "maybeSupportsSL": false }, "specialFlags": {}, "esnPrefix": "NFCDCH-AP-", "_rawResult": { "family": "Chrome\x20Mobile", "major": "116", "minor": "0", "patch": "0", "device": { "family": "Nexus\x205", "major": "0", "minor": "0", "patch": "0" }, "os": { "family": "Android", "major": "6", "minor": "0", "patch": "0" } } }, "type": "Model" }, "geo": { "data": { "locale": { "id": "zh-TW" } } }, "truths": { "data": { "isIELt12": false, "isIELt10": false, "isIELt9": false, "isIELt8": false, "isIpadSafariLt8": false, "isSafariLt8": false, "isSafariGt5": false, "isChromeLt47": false, "isAndroidBrowserLt4": false, "isIELt9AndIpadLt8": false, "needsShim": false, "missingFullVWSupport": false, "missingArrayFind": true, "currentProfileIsKids": false } } } };</script>
     </div>
     <script>
       if ('serviceWorker' in navigator && navigator.serviceWorker.getRegistrations) {
@@ -254,6 +472,13 @@
         }).catch(function () { });
       }
     </script>
-  </body>
 
+    <script>
+      var videoPlayer = document.getElementById('LogoAnimation');
+      function playVid() { 
+        videoPlayer.play(); 
+      }
+    </script>
+
+</body>
 </html>
