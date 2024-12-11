@@ -212,22 +212,29 @@
               <div class="multi-row-lomo has-inline-left-gutter">
                 <h2 class="row-name">與《飛天小女警》類似影片</h2>
                 <div class="lomo has-inline-right-gutter">
-                  <a class="watch-title watch-title-1">
-                    <div style="background-image:url(./IMG_6424.jpeg)" class="title-boxart"></div>
-                    <div style="background-image:url(./IMG_6629.jpeg)" class="title-boxart"></div>
-                  </a>
+                  <div class="watch-title">
+                    <div class="title-boxart" style="background-image:url(./IMG_6424.jpeg)"></div>
+                  </div>
+                  <div class="watch-title">
+                    <div class="title-boxart" style="background-image:url(./IMG_6629.jpeg)"></div>
+                  </div>
                   <style>
-                    .watch-title{
-                      display: flex;
-                      justify-content: space-betweeen;
-                      max-width: 100%;
+                    .watch-title {
+                      width: 48%; /* 每個框的寬度 */
+                      margin-right: 2%; /* 框之間的間距 */
+                      display: inline-block; /* 使框並排顯示 */
+                      vertical-align: top; /* 垂直對齊 */
                     }
-                    .title-boxart{
-                      width: 48%;
-                      background-size: contain;
+                    .title-boxart {
+                      width: 100%; /* 填滿框 */
+                      background-size: cover; /* 確保圖片填滿框 */
                       background-position: center;
-                      height: 200px;
-                    }                      
+                      height: 300px; /* 框的高度 */
+                    }
+                    .lomo {
+                      display: flex; /* 使用flexbox佈局 */
+                      justify-content: space-between; /* 框之間的間距 */
+                    }
                   </style>
                 </div>
               </div>
